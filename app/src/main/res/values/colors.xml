@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bj">#20000000</color>
+    <color name="blue_h">#174870</color>
+    <color name="green">#66CD00</color>
+    <color name="blue_s">#16568a</color>
+    <color name="Xhui">#e2e2e2</color>
+    <color name="hui">#F2F2F2</color>
+    <color name="text">#626262</color>
+    <color name="red">#d10808</color>
+    <color name="whrite">#FFFAFA</color>
+</resources>

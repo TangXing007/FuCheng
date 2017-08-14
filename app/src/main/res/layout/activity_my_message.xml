@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:background="@color/blue_h"
+            android:textColor="@color/whrite"
+            android:text="企业名称"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/my_message_company_name"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:background="@color/blue_h"
+            android:textColor="@color/whrite"
+            android:text="法人身份证号"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/my_message_id_number"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:background="@color/blue_h"
+            android:textColor="@color/whrite"
+            android:text="负责人姓名"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/my_message_name"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:background="@color/blue_h"
+            android:textColor="@color/whrite"
+            android:text="手机号码"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/my_message_phone"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:background="@color/blue_h"
+            android:textColor="@color/whrite"
+            android:text="公司地址"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/my_message_company_adress"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/id_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证上传"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/business_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="营业执照上传"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/my_message_amend_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/whrite"
+        android:text="提交修改"
+        android:background="@drawable/button_border"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+</LinearLayout>
