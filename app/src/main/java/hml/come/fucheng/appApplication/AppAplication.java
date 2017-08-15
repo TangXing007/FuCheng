@@ -3,6 +3,8 @@ package hml.come.fucheng.appApplication;
 import android.app.Application;
 import android.content.SharedPreferences;
 
+import hml.come.fucheng.mvp.component.DaggerAppComponent;
+import hml.come.fucheng.mvp.module.AppModule;
 import hml.come.fucheng.singleton.CustomInfo;
 
 /**
@@ -42,6 +44,11 @@ public class AppAplication extends Application{
             CustomInfo.getInfo().setResource_id(resource_id);
             CustomInfo.getInfo().setResource_landing(true);
         }
+        initMVP();
 
+    }
+
+    private void initMVP(){
+        DaggerAppComponent.builder().appModule(new AppModule(this)).build();
     }
 }

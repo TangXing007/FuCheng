@@ -1,9 +1,6 @@
 package hml.come.fucheng.adapter;
 
 import android.content.Context;
-import android.icu.text.SimpleDateFormat;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -45,8 +43,6 @@ public class SalesListAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
-
-    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHold viewHold;
