@@ -14,6 +14,7 @@ import hml.come.fucheng.R;
  */
 
 public class FirstBannerFragment extends Fragment {
+    //ceshi
     private ImageView imageView;
     public static final String IMAGE_SRC = "image_src";
     @Override
