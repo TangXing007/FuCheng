@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:name=".appApplication.AppAplication"
+        android:name=".aplication.AppAplication"
         android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:label="@string/app_name"

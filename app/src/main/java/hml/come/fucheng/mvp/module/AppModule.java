@@ -2,12 +2,15 @@ package hml.come.fucheng.mvp.module;
 
 import android.content.Context;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import hml.come.fucheng.volleyrequest.SingleToneRequestQueue;
 
 /**
  * Created by tangdi on 8/15/17.
@@ -31,6 +34,12 @@ public class AppModule {
     @Provides
     public Gson provideGson(){
         return new Gson();
+    }
+
+    @Singleton
+    @Provides
+    public RequestQueue provideRequestQueue(){
+        return SingleToneRequestQueue.getInstance().requestQueue();
     }
 
 }

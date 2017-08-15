@@ -1,4 +1,4 @@
-package hml.come.fucheng.appApplication;
+package hml.come.fucheng.aplication;
 
 import android.app.Application;
 import android.content.SharedPreferences;
@@ -15,6 +15,14 @@ public class AppAplication extends Application{
     private SharedPreferences preferences;
     private String user_id, dealer_id, resource_id;
     private String number;
+
+
+    private static AppAplication instance;
+
+    public static AppAplication getInstance() {
+        return instance;
+    }
+
     @Override
     public void onCreate(){
         super.onCreate();
@@ -44,6 +52,7 @@ public class AppAplication extends Application{
             CustomInfo.getInfo().setResource_id(resource_id);
             CustomInfo.getInfo().setResource_landing(true);
         }
+        instance = this;
         initMVP();
 
     }

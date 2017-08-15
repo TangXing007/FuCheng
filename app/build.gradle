@@ -44,4 +44,5 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.8.1'
 
     testCompile 'junit:junit:4.12'
+    compile project(path: ':volley')
 }
